@@ -9,7 +9,7 @@ body {
 }
 
 .layout_padding2 {
-  padding: 45px 0;
+  padding: 20px 0;
 }
 
 .layout_padding2-top {
@@ -175,21 +175,32 @@ a:focus {
           align-items: center;
 }
 
+.slider_detail-box {
+  margin: 50px;
+  margin-top:60px ;
+  margin-bottom: 80px;
+  margin-left: 80px;
+}
+
 .slider_detail-box h1 {
   color: #ffffff;
   font-size: 52px;
+  font-weight: bold;
+  margin: 0px;
 }
 
-.slider_detail-box h1 span {
+.slider_detail-box span {
   display: inline-block;
-  color: #434242;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 35px;
 }
 
 .slider_detail-box p {
   color: #f6f8f7;
-  margin-top: 45px;
+  margin-top: 50px;
   margin-bottom: 40px;
+  font-size: 17px;
 }
 
 .slider_detail-box .btn-box .btn-1 {
@@ -569,4 +580,8 @@ a:focus {
 }
 
 /* end footer section*/
+
+/*adddedn by hyeon*/
+
+
 /*# sourceMappingURL=style.css.map */
