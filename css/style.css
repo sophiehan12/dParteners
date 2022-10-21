@@ -582,6 +582,126 @@ a:focus {
 /* end footer section*/
 
 /*adddedn by hyeon*/
+/*top info*/
+.topinfo_section {
+  background-color: #4F81BD;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topinfo_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topinfo_detail-box {
+  margin: 20px;
+  margin-top:20px ;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.topinfo_detail-box h1 {
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.topinfo_detail-box span {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.topinfo_detail-box p {
+  color: #f6f8f7;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.topinfo_detail-box .btn-box .btn-1 {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #17375E;
+  border: 1px solid #17375E;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.topinfo_detail-box .btn-box .btn-1:hover {
+  background-color: transparent;
+  color: #17375E;
+}
+
+.topinfo_detail-box .btn-box .btn-2 {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #17375E;
+}
+
+.topinfo_detail-box .btn-box .btn-2:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/*reference*/
+.reference_section {
+  background-color: #ffffff;
+}
+
+.reference_items {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.refer_items .item {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.refer_items .item .img-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.refer_items .item .detail-box {
+  margin-top: 5px;
+  color: #4F81BD;
+}
+
+.refer_items {
+  position: relative;
+}
+
+.refer_items a {
+  position: relative;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
