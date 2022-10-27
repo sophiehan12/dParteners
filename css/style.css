@@ -77,6 +77,10 @@ body {
   text-transform: uppercase;
 }
 
+.header_section .navbar-nav li{ /*hiding becuase of aboutus,partners*/
+  padding-left: 50px;
+}
+
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 30px;
   color: #434242;
@@ -683,6 +687,7 @@ a:focus {
 .reference_section .container{
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 
 .refer_items {
@@ -791,8 +796,8 @@ a:focus {
 
 .reference_section .custom_heading{
   text-align: center;
-  margin: 50px 0px;
-  margin-bottom: 70px;
+  margin: 60px 0px;
+  margin-bottom: 50px;
 }
 
 .refer_items3 {
@@ -802,7 +807,8 @@ a:focus {
   border-color: #17375E;
   width: 60%;
   margin: 10px auto;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,12 +869,13 @@ a:focus {
 }
 
 .service_detail{
-  display: flex;
+  margin: 50px 0;
+  margin-bottom: 150px;
 }
 
 .service_detail img{
   display: flex;
-  width: 600px;
+  max-width: 100%;
   height: auto;
 }
 
