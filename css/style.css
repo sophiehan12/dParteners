@@ -307,7 +307,10 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-}
+  /*
+  border-color: #bebebe;
+  border: solid;
+  margin: 0 10px;*/}
 
 .service_section .img_box {
   width: 110px;
@@ -333,10 +336,13 @@ a:focus {
   margin-top: 30px;
   width: 235px;
   padding: 0px 30px;
+  min-height: 320px;
+  margin-bottom: 20px;
 }
 
 .service_section .detail_box h6 {
   font-weight: bold;
+  font-size: large;
 }
 
 .service_section .detail_box p {
