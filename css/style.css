@@ -289,10 +289,28 @@ a:focus {
   color: #17375E;
 }
 
-.service_section .row{/*추가한거..*/
-  margin-left: 0%;
-  padding-left: 0%;
-  margin-right: 0%;
+/*
+.service_backgroundimg .realbackgroundimg{
+  padding: 6% 0;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  overflow: visible;
+  min-height: 420px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/hero_4.jpg);
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+*/
+
+.service_section{
+  position: relative;
+  top: -300px;
 }
 
 .service_section .row .col-md-4 {
@@ -310,7 +328,9 @@ a:focus {
   /*
   border-color: #bebebe;
   border: solid;
-  margin: 0 10px;*/}
+  margin: 0 10px;*/
+  margin: 20px 0;
+  }
 
 .service_section .img_box {
   width: 110px;
@@ -334,24 +354,43 @@ a:focus {
 
 .service_section .detail_box {
   margin-top: 30px;
-  width: 235px;
+  width: 310px;
   padding: 0px 30px;
-  min-height: 320px;
-  margin-bottom: 20px;
+  min-height: 310px;
+  margin-bottom: 10px;
 }
 
 .service_section .detail_box h6 {
   font-weight: bold;
-  font-size: large;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.service_section .detail_box h6 p{
+  font-weight: normal;
+  font-size: 23px;
+  margin: 0 0;
+  text-align: center;
+  line-height: normal;
+  color: #17375E;
 }
 
 .service_section .detail_box p {
   margin-top: 30px;
   font-size: 15px;
-  line-height: 1.1;
+  line-height: 1.9;
+  text-align: left;
 }
 
 .service_section a {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 1px solid #17375E;
+  background-color: transparent;
+  color: #17375E;
+}
+
+.service_section a:hover {
   display: inline-block;
   padding: 12px 25px;
   background-color: #17375E;
@@ -359,15 +398,32 @@ a:focus {
   color: #ffffff;
 }
 
-.service_section a:hover {
-  background-color: transparent;
-  color: #17375E;
-}
-
 .service_section .row{
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+.servicecard{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 1.2em;
+  background-color: #efefef;
+  box-shadow: 7px 7px 8px 4px #242424;
+}
+
+.service_section .nobutton {
+  opacity: 0;
 }
 
 .gallery-section {
@@ -650,7 +706,7 @@ a:focus {
 
 /* topinfo2 */
 .topinfo_section {
-  background-color: #ffffff;
+  background-color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -670,7 +726,7 @@ a:focus {
 
 .topinfo_detail-box h1 {
   color: #17375E;
-  font-size: 52px;
+  font-size: 60px;
   font-weight: bold;
   margin: 0px;
 }
@@ -679,10 +735,43 @@ a:focus {
   display: inline-block;
   color: #17375E;
   font-weight: normal;
-  font-size: 35px;
-  
+  font-size: 42px;
 }
 
+/*topinfo_service*/
+.topinfo_service{
+  background-image: url(../images/hero_4.jpg);
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.topinfo_service .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topinfo_detail-box {
+  margin: 20px;
+  margin-top:60px ;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.topinfo_detail-box h1 {
+  color: #17375E;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.topinfo_detail-box span {
+  display: inline-block;
+  color: #17375E;
+  font-weight: normal;
+  font-size: 42px;
+}
 
 /*reference*/
 .reference_section {

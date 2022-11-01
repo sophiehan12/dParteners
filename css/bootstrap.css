@@ -1028,6 +1028,7 @@ pre code {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+    min-width: 270px;
   }
   .col-md-5 {
     -ms-flex: 0 0 41.666667%;
@@ -1341,6 +1342,9 @@ pre code {
 }
 
 @media (min-width: 1200px) {
+  .row{
+    flex-wrap: nowrap;
+  }
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
