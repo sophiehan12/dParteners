@@ -4438,28 +4438,21 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
 
 //# sourceMappingURL=bootstrap.js.map
 
-/*
-const modal = document.getElementById("modal")
-const btnModal = document.getElementById("btn-modal")
-btnModal.addEventListener("click", e => {
-    modal.style.display = "flex"
-})
-const closeBtn = modal.querySelector(".close-area")
-closeBtn.addEventListener("click", e => {
-    modal.style.display = "none"
-})
- */
+const modalm = document.querySelector(".people_modal")
+const modal = document.getElementById("modal1")
 
 
-const modal = document.getElementById("modal")
 function modalOn() {
     modal.style.display = "block"
+    modalm.style.display = "block"
 }
 function isModalOn() {
     return modal.style.display === "flex"
+    return modalm.style.display === "flex"
 }
 function modalOff() {
     modal.style.display = "none"
+    modalm.style.display = "none"
 }
 
 const btnModal = document.getElementById("btn-modal")
@@ -4485,4 +4478,47 @@ window.addEventListener("keyup", e => {
 const mybutt = modal.querySelector(".mybuttoon")
 mybutt.addEventListener("click", e => {
   modalOn()
+})
+
+
+// 예시 모달 4
+
+const modal4 = document.getElementById("modal4")
+
+function modalOn2() {
+  modal4.style.display = "block"
+  modalm.style.display = "block"
+}
+function isModalOn2() {
+  return modal4.style.display === "flex"
+  return modalm.style.display === "flex"
+}
+function modalOff2() {
+  modal4.style.display = "none"
+  modalm.style.display = "none"
+}
+
+const btnModal2 = document.getElementById("btn-modal2")
+btnModal2.addEventListener("click", e => {
+  modalOn2()
+})
+const closeBtn2 = modal4.querySelector(".close-area")
+closeBtn2.addEventListener("click", e => {
+  modalOff2()
+})
+modal4.addEventListener("click", e => {
+  const evTarget = e.target
+  if(evTarget.classList.contains("modal-overlay")) {
+      modalOff2()
+  }
+})
+window.addEventListener("keyup", e => {
+  if(isModalOn2() && e.key === "Escape") {
+      modalOff2()
+  }
+})
+
+const mybutt2 = modal4.querySelector(".mybuttoon2")
+mybutt2.addEventListener("click", e => {
+  modalOn2()
 })

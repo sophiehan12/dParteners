@@ -221,6 +221,7 @@ a:focus {
   margin-top: 50px;
   margin-bottom: 40px;
   font-size: 17px;
+  text-shadow: 2px 2px 2px #010106;
 }
 
 .slider_detail-box .btn-box .btn-1 {
@@ -1499,66 +1500,171 @@ a:focus {
 }
 /*# sourceMappingURL=style.css.map */
 
-/*modal*/
+/*modal
 #modal{
   display: none;
-}
-#modal .modal-overlay{
   position: fixed;
-    width: 40%;
-    left: 50%;
-    margin-left: -20%; /* half of width */
-    height: 300px;
-    top: 50%;
-    margin-top: -150px; /* half of height */
-    overflow: auto;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+#modal .modal-overlay{
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 #modal .modal-window{
   position: fixed;
     width: 40%;
     left: 50%;
-    margin-left: -20%; /* half of width */
-    height: 300px;
-    top: 50%;
-    margin-top: -150px; /* half of height */
+    margin-left: -20%; 
+    top: 45%;
+    margin-top: -150px; 
     overflow: auto;
-  background: rgba( 69, 139, 197, 0.70 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
+  background: rgb(237, 237, 237);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 10px;
+  padding: 22px;
   display: block;
+  padding-top: 25px;
 }
 
 #modal .title{
-  padding-left: 10px;
+  padding-left: 16px;
   display: inline;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
+  color: #17375E;
+  margin-bottom: 10px;
 }
 #modal .title h2 {
   display: inline;
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 1px rgba(96, 96, 96, 0.562)
 }
 #modal .close-area {
   display: inline;
   float: right;
   padding-right: 10px;
   cursor: pointer;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
+  color: #030404;
+  font-size: 22px;
 }
 
 #modal .content {
   margin-top: 20px;
   padding: 0px 10px;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
+  color: #030404;
+  line-height: 1.15rem;
+  font-size: 15px;
+}
+#modal .content .liltitle{
+  font-weight: bold;
+  line-height: 1.0rem;
+  font-size: 18px;
+  color: #3b597d;
+  margin-top: 10px;
+}
+*/
+
+.people_modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.people_modal .modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+
+.people_modal #modal1{
+  display: none;
+}
+/*
+.people_modal #modal1{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}*/
+
+.people_modal #modal4{
+  display: none;
+}
+
+.people_modal .modal-window{
+  position: fixed;
+    width: 40%;
+    left: 50%;
+    margin-left: -20%; 
+    top: 45%;
+    margin-top: -150px; 
+    overflow: auto;
+  background: rgb(237, 237, 237);
+  border-radius: 10px;
+  padding: 22px;
+  display: block;
+  padding-top: 25px;
+}
+
+.people_modal .title{
+  padding-left: 16px;
+  display: inline;
+  color: #17375E;
+  margin-bottom: 10px;
+}
+.people_modal .title h2 {
+  display: inline;
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 1px rgba(96, 96, 96, 0.562)
+}
+.people_modal .close-area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  color: #030404;
+  font-size: 22px;
+}
+
+.people_modal .content {
+  margin-top: 20px;
+  padding: 0px 10px;
+  color: #030404;
+  line-height: 1.15rem;
+  font-size: 15px;
+}
+.people_modal .content .liltitle{
+  font-weight: bold;
+  line-height: 1.0rem;
+  font-size: 18px;
+  color: #3b597d;
+  margin-top: 10px;
 }
