@@ -4438,6 +4438,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
 
 //# sourceMappingURL=bootstrap.js.map
 
+/*
 const modalm = document.querySelector(".people_modal")
 const modal = document.getElementById("modal1")
 
@@ -4455,7 +4456,7 @@ function modalOff() {
     modalm.style.display = "none"
 }
 
-const btnModal = document.getElementById("btn-modal")
+const btnModal = document.getElementById("btn-modal1")
 btnModal.addEventListener("click", e => {
     modalOn()
 })
@@ -4475,10 +4476,6 @@ window.addEventListener("keyup", e => {
     }
 })
 
-const mybutt = modal.querySelector(".mybuttoon")
-mybutt.addEventListener("click", e => {
-  modalOn()
-})
 
 
 // 예시 모달 4
@@ -4500,7 +4497,7 @@ function modalOff2() {
 
 const btnModal2 = document.getElementById("btn-modal2")
 btnModal2.addEventListener("click", e => {
-  modalOn2()
+    modalOn2()
 })
 const closeBtn2 = modal4.querySelector(".close-area")
 closeBtn2.addEventListener("click", e => {
@@ -4518,7 +4515,54 @@ window.addEventListener("keyup", e => {
   }
 })
 
-const mybutt2 = modal4.querySelector(".mybuttoon2")
-mybutt2.addEventListener("click", e => {
-  modalOn2()
-})
+*/
+
+//for 문~ 해보기~
+
+
+const modalm = document.querySelector(".people_modal")
+var modalp, modalbtn
+modalp = 'modal'
+modalbtn = 'btn-modal'
+
+for (var i = 1; i < 13; i++) {
+  //document.write(i + "<br>");
+  modalp = modalp+i
+  modalbtn = modalbtn + i
+
+  const modal = document.getElementById(modalp)
+
+
+  function modalOn() {
+      modal.style.display = "block"
+      modalm.style.display = "block"
+  }
+  function isModalOn() {
+      return modal.style.display === "flex"
+      return modalm.style.display === "flex"
+  }
+  function modalOff() {
+      modal.style.display = "none"
+      modalm.style.display = "none"
+  }
+
+  const btnModal = document.getElementById(modalbtn)
+  btnModal.addEventListener("click", e => {
+      modalOn()
+  })
+  const closeBtn = modal.querySelector(".close-area")
+  closeBtn.addEventListener("click", e => {
+      modalOff()
+  })
+  modal.addEventListener("click", e => {
+      const evTarget = e.target
+      if(evTarget.classList.contains("modal-overlay")) {
+          modalOff()
+      }
+  })
+  window.addEventListener("keyup", e => {
+      if(isModalOn() && e.key === "Escape") {
+          modalOff()
+      }
+  })
+}
