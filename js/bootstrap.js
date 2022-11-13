@@ -4438,6 +4438,16 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
 
 //# sourceMappingURL=bootstrap.js.map
 
+
+const servicescollbtn1 = document.getElementById("servicescroll1")
+const servicescollbtn2 = document.getElementById("servicescroll2")
+window.onload = function(){servicescollbtn1.addEventListener("click", e => {
+  document.getElementById("scrollto1").scrollIntoView(true);
+})
+servicescollbtn2.addEventListener("click", e => {
+  document.getElementById("scrollto2").scrollIntoView(true);
+})}
+
 /*
 const modalm = document.querySelector(".people_modal")
 const modal = document.getElementById("modal1")
@@ -4519,7 +4529,6 @@ window.addEventListener("keyup", e => {
 
 //for 문~ 해보기~
 
-
 const modalm = document.querySelector(".people_modal")
 var modalp, modalbtn
 modalp = 'modal'
@@ -4565,4 +4574,24 @@ for (var i = 1; i < 13; i++) {
           modalOff()
       }
   })
+
+  modalp = 'modal'
+  modalbtn = 'btn-modal'
 }
+
+
+//
+/*
+const modalwindow = document.querySelector(".modal-window")
+function modalheight(){
+  var modalh, modalhh, modalhw
+  modalh = modalwindow.length
+  modalhh = -modalh/2
+  modalhw = toString(modalhh)
+
+modalwindow.style.marginTop = modalhw;
+}
+
+modalheight();
+*/
+

@@ -1,5 +1,8 @@
+html{
+	scroll-behavior: smooth;
+}
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", 'Noto Sans KR';
   color: #0c0c0c;
   background-color: #ffffff;
 }
@@ -1312,9 +1315,23 @@ a:focus {
   padding-bottom: 80px;
 }
 
+#peoplesec2{
+  background-color: #e0e0e0;
+  padding-top: 70px;
+}
+
+#peoplesec2 .custom_heading{
+  color: #304865;
+}
+
+#peoplesec3{
+  padding-top: 70px;
+}
+
 .people_section .custom_heading{
   text-align: center;
   color: #ffffff;
+  font-size: 39px;
 }
 
 .people_section .row .col-md-4_1 {
@@ -1341,7 +1358,7 @@ a:focus {
   height: 150px;
   border-radius: 100%;
   margin-left: 25px;
-  background-color: #ffffff;
+  background-color: #e8e8e8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1355,6 +1372,20 @@ a:focus {
 
 .people_section .img_box img {
   width: 150px;
+  border-radius: 100%;
+}
+
+.people_section .img_box2 {
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  margin-left: 25px;
+  background-color: transparent;
+  
+}
+
+.people_section .img_box2 img {
+  width: 23px;
   border-radius: 100%;
 }
 
@@ -1408,6 +1439,16 @@ a:focus {
   background-color: transparent;
   border-bottom:3px solid #4F81BD;
   color: #4F81BD;
+  cursor: pointer;
+}
+
+.img_box2 a {
+  text-decoration-line: none;
+  border: none;
+}
+
+.img_box2 a:hover {
+  border: none;
 }
 
 .people_section .row{
@@ -1597,10 +1638,6 @@ a:focus {
   z-index: 0;
 }
 
-
-.people_modal #modal1{
-  display: none;
-}
 /*
 .people_modal #modal1{
   display: none;
@@ -1613,17 +1650,13 @@ a:focus {
   z-index: 0;
 }*/
 
-.people_modal #modal4{
-  display: none;
-}
-
 .people_modal .modal-window{
   position: fixed;
     width: 40%;
     left: 50%;
     margin-left: -20%; 
-    top: 45%;
-    margin-top: -150px; 
+    top: 50%;
+    margin-top: -180px;
     overflow: auto;
   background: rgb(237, 237, 237);
   border-radius: 10px;
@@ -1636,13 +1669,11 @@ a:focus {
   padding-left: 16px;
   display: inline;
   color: #17375E;
-  margin-bottom: 10px;
 }
 .people_modal .title h2 {
   display: inline;
-  font-size: 25px;
-  padding-bottom: 10px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: normal;
   letter-spacing: 1.5px;
   text-shadow: 1px 1px 1px rgba(96, 96, 96, 0.562)
 }
@@ -1659,13 +1690,51 @@ a:focus {
   margin-top: 20px;
   padding: 0px 10px;
   color: #030404;
-  line-height: 1.15rem;
-  font-size: 15px;
+  line-height: 1.0rem;
+  font-size: 14.5px;
 }
 .people_modal .content .liltitle{
   font-weight: bold;
   line-height: 1.0rem;
-  font-size: 18px;
-  color: #3b597d;
-  margin-top: 10px;
+  font-size: 16px;
+  color: #030404;
+  margin-top: 15px;
+  padding-top: 8px;
+}
+
+.people_modal #modal1{
+  display: none;
+}
+.people_modal #modal2{
+  display: none;
+}
+.people_modal #modal3{
+  display: none;
+}
+.people_modal #modal4{
+  display: none;
+}
+.people_modal #modal5{
+  display: none;
+}
+.people_modal #modal6{
+  display: none;
+}
+.people_modal #modal7{
+  display: none;
+}
+.people_modal #modal8{
+  display: none;
+}
+.people_modal #modal9{
+  display: none;
+}
+.people_modal #modal10{
+  display: none;
+}
+.people_modal #modal11{
+  display: none;
+}
+.people_modal #modal12{
+  display: none;
 }
