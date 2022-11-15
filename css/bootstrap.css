@@ -1033,8 +1033,8 @@ pre code {
   .col-md-4_1 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    min-width: 500px;
+    max-width: 25%;
+    min-width: 340px;
   }
   .col-md-5 {
     -ms-flex: 0 0 41.666667%;

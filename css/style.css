@@ -1357,7 +1357,6 @@ a:focus {
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  margin-left: 25px;
   background-color: #e8e8e8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1401,8 +1400,12 @@ a:focus {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 0;
-  color: #17375E;
+  color: #ffffff;
   text-align: left;
+}
+
+#peoplesec2 h6 {
+  color: #17375E;
 }
 
 .people_section .detail_box h6 p{
@@ -1410,8 +1413,12 @@ a:focus {
   font-size: 17px;
   margin: 0 0;
   line-height: normal;
-  color: #7b7b7b;
+  color: #b1b1b1;
   margin-bottom: 15px;
+}
+
+#peoplesec2 h6 p{
+  color: #5e5e5e;
 }
 
 .people_section .detail_box p {
@@ -1419,6 +1426,10 @@ a:focus {
   font-size: 15px;
   line-height: 1.9;
   text-align: left;
+  color: #000000;
+}
+
+#peoplesec2 p {
   color: #2e2e2e;
 }
 
@@ -1427,9 +1438,14 @@ a:focus {
   padding: 0px 10px;
   font-size: 16px;
   background-color: transparent;
-  border-bottom:3px solid #575757;
-  color: #5d5d5d;
+  border-bottom:3px solid #b1b1b1;
+  color: #b1b1b1;
   margin-bottom: 5px;
+}
+
+#peoplesec2 a{
+  color: #5d5d5d;
+  border-bottom:3px solid #575757;
 }
 
 .people_section a:hover {
@@ -1437,9 +1453,14 @@ a:focus {
   padding: 0px 10px;
   font-size: 16px;
   background-color: transparent;
+  border-bottom:3px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#peoplesec2 a:hover {
   border-bottom:3px solid #4F81BD;
   color: #4F81BD;
-  cursor: pointer;
 }
 
 .img_box2 a {
@@ -1470,7 +1491,7 @@ a:focus {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: row;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1478,12 +1499,13 @@ a:focus {
   padding: 24px 0px;
   padding-top: 27px;
   border-radius: 1.0em;
-  box-shadow: 4px 4px 8px 5px rgba(39, 39, 39, 0.6);
-  min-width: 400px;
-  background-color: #ffffff;
+  /*box-shadow: 4px 4px 8px 5px rgba(39, 39, 39, 0.6);*/
+  min-width: 300px;
+  background-color: transparent;
   /*
   background-color: #e8e8e8;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);*/
+  border: #617894 solid 1px;
 }
 
 .people_section .nobutton {
