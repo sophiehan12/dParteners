@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
   <!-- Basic -->
@@ -74,6 +74,12 @@
                 <li class="nav-item">
                   <a class="nav-link" href="references.html">References</a>
                 </li>
+                <li class="nav-item">
+                  <select id="lang-select" onchange="chageLangSelect()">
+                    <option value="ko" selected id="btn-ko">Korean</option>
+                    <option value="en" id="btn-en">English</option>
+                  </select>
+                </li>
               </ul>
             </div>
           </div>
@@ -97,9 +103,10 @@
                     <span>
                       For   Your   Value
                     </span>
-                    <p>
+                    <p data-lang="index_line">
                       dPARTNERS는 기업 가치 제고를 위한 서비스를 제공합니다.
                     </p>
+                    <p id="language"><span data-lang="now_sys_lang">[now-sys-lang]</span> : <span id="locale"></span></p>
                     
                   </div>
                 </div>
