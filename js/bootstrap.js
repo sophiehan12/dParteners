@@ -4460,10 +4460,10 @@ servicescollupbtn2.addEventListener("click" , e => {
 
 
 //다국어 지원..
-
+/*
 const lang = {
   en: {
-      index_line: "dPartners english test..ver.1"
+      index_line: "dPARTNERS  make you achieve the value improvement "
   },
   ko: {
       index_line: "dPARTNERS는 기업 가치 제고를 위한 서비스를 제공합니다."
@@ -4503,20 +4503,78 @@ function chageLangSelect(){
 
   if(selectValue=="en"){
       render("en");
+      currentLang = 'en-US';
+      alert(currentLang);
   }else{
       render("ko");
   }
 }
+*/
 
-// 버튼 이벤트
-document.getElementById("btn-en").addEventListener("click", e => {
-  alert("?")
-  render("en")
-})
-document.getElementById("btn-ko").addEventListener("click", e => {
-  render("ko")
-})
 
+//다국어 지원..
+
+const lang = {
+  en: {
+      index_line: "dPARTNERS  make you achieve the value improvement ",
+      refer_menu1: "Purchasing Strategy/PI",
+      refer_menu2: "Strategic Sourcing"
+  },
+  ko: {
+      index_line: "dPARTNERS는 기업 가치 제고를 위한 서비스를 제공합니다.",
+      refer_menu1:"구매전략/PI",
+      refer_menu2: "전략구매"
+  }
+}
+
+// ** 현재 브라우저의 언어 가져오기 **
+/*
+function getLanguage() {
+  return navigator.language || navigator.userLanguage;
+}
+
+// 언어별 적용
+
+function init(localeStr) {
+  document.getElementById("locale").textContent = localeStr
+}
+*/
+
+// 초기 작업
+var currentLang = "ko"
+
+var x = document.getElementsByTagName("BODY")[0];
+currentLang = x.getAttribute("lang");
+
+render(currentLang)
+
+
+// 언어별 렌더링
+function render(locale) {
+  const $lang = document.querySelectorAll("[data-lang]")
+  $lang.forEach(el => {
+      const code = el.dataset.lang
+      el.textContent = lang[locale][code]
+  })
+}
+
+function chageLangSelect(){
+  var langSelect = document.getElementById("lang-select");
+  
+  // select element에서 선택된 option의 value가 저장된다.
+  var selectValue = langSelect.options[langSelect.selectedIndex].value;
+
+  if(selectValue=="en"){
+      render("en");
+      currentLang="en"
+      x.setAttribute('lang', 'en');
+      alert(x.getAttribute("lang"));
+  }else{
+      render("ko");
+      x.setAttribute('lang', 'ko');
+      alert(x.getAttribute("lang"));
+  }
+}
 
 //모달 했던거..
 /*

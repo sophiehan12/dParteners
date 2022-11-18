@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
   <!-- Basic -->
@@ -34,7 +34,7 @@
 
 </head>
 
-
+<body lang="ko">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -75,14 +75,16 @@
                   <a class="nav-link" href="references.html">References</a>
                 </li>
                 <li class="nav-item">
-                  <select id="lang-select" onchange="chageLangSelect()">
-                    <option value="ko" selected id="btn-ko">Korean</option>
-                    <option value="en" id="btn-en">English</option>
-                  </select>
+                  <div class="language-select"> 
+                    <select id="lang-select" onchange="chageLangSelect()" class="select">
+                      <option value="ko" selected id="btn-ko" class="seloption">KOREAN</option>
+                      <option value="en" id="btn-en" class="seloption">ENGLISH</option>
+                    </select>
+                  </div>
                 </li>
               </ul>
             </div>
-          </div>
+          </div> 
         </nav>
       </div>
     </header>
@@ -171,7 +173,5 @@
   
 </body>
 
-
-</body>
 
 </html>
