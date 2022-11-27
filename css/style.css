@@ -1433,7 +1433,7 @@ a:focus {
 
 .refer_items4 .img-box img{
   width: 70px;
-  margin: 0 6px;
+  margin: 8px 6px;
 }
 
 .refer_items4 .img-box2{
@@ -1709,6 +1709,17 @@ a:focus {
 }
 
 .service_detail img{
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.service_detail2{
+  padding: 0 20px;
+  margin: 70px 0;
+}
+
+.service_detail2 img{
   display: flex;
   max-width: 100%;
   height: auto;

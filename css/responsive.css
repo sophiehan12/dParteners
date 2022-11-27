@@ -31,8 +31,34 @@
     margin-left: 0px;
     margin: auto;
   }
-  .refer2_items{
+  .refer2_items, .refer2_items3, .refer_items{
     flex-direction: column;
+    text-align: center;
+  }
+  .refer2_items .refer2_title, .refer2_items3 .refer2_title, .refer_items .refer_title, .refer_items4 .refer_title{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .refer2_items .refer2_content, .refer_items .refer_content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .refer2_items3 .refer2_content{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .refer_items2{
+    text-shadow: 1px 1px 1px rgb(0, 0, 0)
+  }
+  .refer_items4 .img-box{
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .slider_detail-box span, .slider_detail-box h1{
+    text-shadow: 2px 2px 2px #010106;
   }
   /*여기서 작을때 수정하기 ㅎㅎ*/
 }
@@ -82,6 +108,12 @@
     margin: 40px 0;
     text-align: center;
   }
+  .service_detail img{
+    content: url(../images/service_details_mobile.png);
+  }
+  .service_detail2 img{
+    content: url(../images/service_details_en_mobile.png);
+  }
 }
 
 @media (max-width: 576px) {
@@ -121,6 +153,10 @@
   .map_section #map {
     position: relative;
     height: 450px !important;
+  }
+
+  .people_section .custom_heading{
+    font-size: 35px;
   }
 }
 
