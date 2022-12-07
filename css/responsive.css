@@ -23,10 +23,6 @@
   .custom_nav-container .nav_search-btn {
     background-position: center;
   }
-
-  .map_section .form_container form {
-    width: 450px;
-  }
   .language-select .select{
     margin-left: 0px;
     margin: auto;
@@ -132,27 +128,6 @@
 
   .client_section .client_container {
     margin-top: 100px;
-  }
-
-  .gallery-section .container {
-    flex-direction: column;
-  }
-
-  .gallery-section .img_box {
-    width: 100% !important;
-  }
-
-  .map_section .form_container {
-    width: 100%;
-  }
-
-  .map_section .form_container form {
-    width: 100%;
-  }
-
-  .map_section #map {
-    position: relative;
-    height: 450px !important;
   }
 
   .people_section .custom_heading{
