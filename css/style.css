@@ -5,6 +5,8 @@ body {
   font-family: "Poppins", 'Noto Sans KR';
   color: #0c0c0c;
   background-color: #ffffff;
+  width:100%;
+  overflow-x:hidden;
 }
 
 .layout_padding {
